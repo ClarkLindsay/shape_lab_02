@@ -1,22 +1,22 @@
 class Cube extends ThreeDShape{
 
-   private double radius;
+   private double side;
    private double height;
 
-   public Cube(double radius, double height){
-      this.radius = radius;
+   public Cube(double side, double height){
+      this.side = side;
       this.height = height;
    }
    
    public final double area(){
-      return radius*radius;
+      return side*side;
    }
    
    public final double volume(){
-      return radius*radius*height;
+      return side*side*height;
    }
    
    public final double surfaceArea(){
-      return 6*radius*radius;
+      return 6*side*side;
    }
 }
